@@ -41,13 +41,14 @@ def create_enhanced_pdf (stats ,visuals_dir ,output_pdf ):
 
     pdf .chapter_title ('1. EXECUTIVE SUMMARY & STRATEGIC OVERVIEW')
     pdf .set_font ('Arial','B',12 )
-    pdf .set_text_color (33 ,33 ,33 )
-    pdf .cell (0 ,8 ,'Overview:',0 ,1 )
+    pdf.set_text_color(33, 33, 33)
+    pdf.cell(0, 8, 'Overview:', 0, 1)
 
     summary_text =(
     f"This report presents a clinical analysis of {stats ['total_restaurants']} restaurant entities in Bangalore. "
     "The objective is to decode the drivers of customer satisfaction and market positioning. "
-    f"Key Metrics: Avg Rating ({stats ['avg_rating']:.2f}), Avg Cost/Two ({stats ['avg_cost']:.2f} INR).\n\n"
+    f"Key Metrics: Avg Rating ({stats ['avg_rating']:.2f}), Avg Cost/Two ({stats ['avg_cost']:.2f} INR).\n"
+    "GitHub Repository: https://github.com/ankushsingh003/IIML.git\n\n"
     "Strategic High-Level Inferences:\n"
     "- Engagement as a Proxy for Quality: High rating reliability is anchored in engagement volume (Votes).\n"
     "- Price Sensitivity: The market is heavily concentrated in the sub-1000 INR price point, indicating a value-driven consumer base.\n"
