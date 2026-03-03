@@ -1,0 +1,7 @@
+generate_report.py
+__pycache__/
+*.pyc
+visuals/
+cleaned_restaurant_data.csv
+round1.csv
+*.pdf
